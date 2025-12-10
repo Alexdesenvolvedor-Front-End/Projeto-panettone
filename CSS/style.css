@@ -133,15 +133,13 @@ header {
 
 
 .type {
-    white-space: nowrap;
-    overflow: hidden;
-    /* Evita quebra do texto */
-    font-size: .9em;
-    color: #8B7D72;
-    font-weight: 500;
-    display: block;
-    max-width: 100%;
-
+  display: block;            /* garante comportamento previsível */
+  width: 100%;               /* limita ao tamanho do card-body */
+  box-sizing: border-box;    /* respeita padding do container */
+  white-space: nowrap;
+  overflow: hidden;
+  
+  margin: 0;                 /* evita margens que alterem layout */
 }
 
 
