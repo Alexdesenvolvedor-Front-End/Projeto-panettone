@@ -26,8 +26,10 @@ section {
 }
 
 
+html,
 body {
     background-color: var(--body);
+    overflow-x: hidden;
 }
 
 
@@ -132,10 +134,13 @@ header {
 
 .type {
     white-space: nowrap;
+    overflow: hidden;
     /* Evita quebra do texto */
     font-size: .9em;
     color: #8B7D72;
     font-weight: 500;
+    display: block;
+    max-width: 100%;
 
 }
 
