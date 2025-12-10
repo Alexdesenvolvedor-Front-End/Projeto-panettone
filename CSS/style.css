@@ -1,0 +1,254 @@
+/* RESET CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --primary: #ffffff;
+    --body: #F8F5F2;
+    --paragrafo: #DCDCDC;
+    --card-body: #ffffff;
+    --button: #C1121F;
+
+}
+
+/* BODY AND HEADER AND PADDING */
+
+
+
+section {
+    padding: 1em;
+
+}
+
+
+body {
+    background-color: var(--body);
+}
+
+
+
+
+header img {
+    height: 600px;
+    filter: brightness(70%);
+}
+
+
+
+
+header {
+    position: relative;
+}
+
+
+
+
+
+.title {
+    position: absolute;
+    font-family: "Cinzel", serif;
+    top: 6em;
+    font-size: 2.5em;
+    margin-left: 1em;
+    color: var(--primary);
+    width: 80%;
+    text-align: center;
+    font-weight: 500;
+
+
+
+}
+
+
+
+
+.texto {
+    position: absolute;
+    top: 26em;
+    color: var(--paragrafo);
+    margin-left: 10em;
+    margin-top: 1em;
+    font-size: .8em;
+    font-weight: 100;
+
+}
+
+
+
+
+.texto-logo {
+    position: absolute;
+    top: 2em;
+    color: #F8F9FA;
+    margin-left: 5em;
+    font-size: 1.3em;
+    font-weight: 500;
+    text-shadow: 0 0 6px #F5F5F5;
+}
+
+
+
+
+.card-img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 0;
+}
+
+
+.card-body {
+    background-color: var(--card-body);
+    min-height: 150px;
+
+
+}
+
+
+
+.second-title {
+    color: #4B3621;
+    text-align: center;
+    font-size: 2.3em;
+    font-weight: 600;
+    font-family: "Cinzel", serif;
+}
+
+
+
+.name {
+    color: #5A3E2B;
+    font-size: 1.3em;
+    text-transform: capitalize;
+    font-weight: 500;
+
+}
+
+
+.type {
+    white-space: nowrap;
+    /* Evita quebra do texto */
+    font-size: .9em;
+    color: #8B7D72;
+    font-weight: 500;
+
+}
+
+
+
+
+.price {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+
+.old-price {
+    font-size: .9em;
+    text-decoration: line-through;
+    color: #A1866F;
+}
+
+
+.new-price {
+    font-weight: bolder;
+    color: #000000;
+}
+
+
+
+
+
+.link-button {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 2em;
+    background-color: var(--button);
+    padding: 1.1em 2em;
+    border-radius: 3px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: trasform .3s ease;
+
+
+
+}
+
+
+
+.link-button:active {
+    transform: scale(0.95s);
+}
+
+
+
+
+
+.rodape {
+    background-color: rgba(255, 248, 230, 0.12);
+    height: 200px;
+
+}
+
+
+
+
+
+.icons {
+    text-align: center;
+
+}
+
+
+
+
+.rodape .icons a {
+    transition: transform .18s ease;
+}
+
+
+
+
+
+.rodape .icons a:hover {
+    transform: scale(1.12);
+}
+
+
+
+
+
+
+
+.rodape i {
+    font-size: 2em;
+    margin: .5em;
+    color: #A68B71;
+
+
+}
+
+
+.copy {
+    font-size: .8em;
+    text-align: center;
+    color: #8B6F47;
+    margin-top: 1em;
+}
+
+
+.mensagem {
+    color: #C1121F;
+    font-weight: 600;
+    font-size: .9em;
+    text-align: center;
+
+}
