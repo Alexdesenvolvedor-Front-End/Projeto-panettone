@@ -208,7 +208,7 @@ header {
 
 .icons {
     text-align: center;
-    margin-bottom: 1.2em;
+    margin-bottom: 1em;
 
 }
 
@@ -243,7 +243,7 @@ header {
 
 
 .copy {
-    font-size: .8em;
+    font-size: .7em;
     text-align: center;
     color: #8B6F47;
     margin-top: 1em;
@@ -253,7 +253,7 @@ header {
 .mensagem {
     color: #C1121F;
     font-weight: 600;
-    font-size: .9em;
+    font-size: .8em;
     text-align: center;
 
 }
