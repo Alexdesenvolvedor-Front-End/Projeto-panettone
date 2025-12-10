@@ -71,7 +71,7 @@ header {
 
 .texto {
     position: absolute;
-    top: 28em;
+    top: 30em;
     color: var(--paragrafo);
     margin-left: 5em;
     margin-top: 1em;
