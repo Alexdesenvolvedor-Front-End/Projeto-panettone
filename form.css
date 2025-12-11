@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+/* BODY */
+
+html,
+body {
+    overflow-x: hidden;
+    background-color: #F8F5F2;
+}
+
+
+
+header {
+    margin-bottom: 4em;
+}
+
+
+
+.contact {
+    font-family: "Cinzel", serif;
+    font-size: 2em;
+    color: #2B4735;
+    font-weight: 600;
+}
+
+
+/* FORMULÁRIO */
+
+/* Estilo geral do formulário */
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-bottom: 3em;
+}
+
+
+
+/* Espaçamento entre elementos */
+
+
+form input,
+form select {
+    margin-bottom: 2em;
+    padding: .5em;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-weight: 600;
+    color: #2B4735;
+    font-weight: 600;
+}
+
+
+
+form input,
+form select:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+
+}
+
+
+
+label {
+    color: #2B4735;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+
+
+/* Estilo do botão */
+
+
+form .button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: .8em 1.5em;
+    border: none;
+    border-radius: 2px;
+    font-weight: 400;
+    transition: .15s ease;
+}
+
+
+form .button:active {
+    transform: scale(.92);
+}
+
+
+
+
+/* option */
+
+section,
+option {
+    color: #333;
+
+}
+
+
+input::placeholder {
+    font-size: .8em;
+    color: #b2b2b2;
+}
