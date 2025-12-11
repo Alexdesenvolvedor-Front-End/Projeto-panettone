@@ -184,17 +184,16 @@ header {
 
 
 
-.video-container video{
+.video-container video {
     object-fit: contain;
     width: 100%;
- 
 }
 
 
 
 .information {
     background-color: rgba(255, 0, 0, 0.1);
-    height: 400px;
+    height: 350px;
     padding: 1.2em;
     border-radius: 3px;
 
