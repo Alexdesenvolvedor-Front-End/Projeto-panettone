@@ -1,5 +1,4 @@
 /* RESET CSS */
-
 * {
     margin: 0;
     padding: 0;
@@ -190,70 +189,4 @@ header {
 
 .link-button:active {
     transform: scale(0.95s);
-}
-
-
-
-
-
-.rodape {
-    background-color: rgba(255, 248, 230, 0.12);
-    height: 200px;
-
-}
-
-
-
-
-
-.icons {
-    text-align: center;
-    margin-bottom: 1em;
-
-}
-
-
-
-
-.rodape .icons a {
-    transition: transform .18s ease;
-}
-
-
-
-
-
-.rodape .icons a:hover {
-    transform: scale(1.12);
-}
-
-
-
-
-
-
-
-.rodape i {
-    font-size: 2em;
-    margin: .5em;
-    color: #A68B71;
-
-
-}
-
-
-.copy {
-    font-size: .7em;
-    text-align: center;
-    color: #8B6F47;
-    margin-top: 1em;
-}
-
-
-.mensagem {
-    color: #C1121F;
-    font-weight: 600;
-    font-size: .8em;
-    text-align: center;
-
 }
