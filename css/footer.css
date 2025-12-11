@@ -9,6 +9,8 @@
     text-align: center;
     color: #8B6F47;
     margin-top: 1em;
+    /* width: 85%;
+    margin: 0 auto; */
 }
 
 
@@ -17,6 +19,8 @@
     font-weight: 600;
     font-size: .8em;
     text-align: center;
+    width: 50%;
+    margin: 0 auto;
 
 }
 
