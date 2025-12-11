@@ -207,4 +207,5 @@ header {
     color: rgba(80, 80, 80, 0.8);
     letter-spacing: 1px;
     line-height: 28px;
+    font-weight: 100;
 }
