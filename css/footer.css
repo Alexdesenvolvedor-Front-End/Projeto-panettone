@@ -1,59 +1,54 @@
 .rodape {
     background-color: rgba(255, 248, 230, 0.12);
+    /* Fundo bege bem claro e translúcido */
     height: 200px;
-
+    /* Altura fixa do rodapé */
 }
 
 .copy {
     font-size: .7em;
+    /* Tamanho pequeno do texto */
     text-align: center;
+    /* Centraliza o texto */
     color: #8B6F47;
+    /* Tom marrom claro */
     margin-top: 1em;
-
+    /* Espaçamento acima */
 }
-
 
 .mensagem {
     color: #C1121F;
+    /* Vermelho destacado para mensagem */
     font-weight: 600;
+    /* Texto mais forte / semibold */
     font-size: .8em;
+    /* Tamanho levemente maior */
     text-align: center;
-
+    /* Centraliza a mensagem */
 }
-
-
 
 .icons {
     text-align: center;
+    /* Centraliza os ícones */
     margin-bottom: 1em;
-
+    /* Espaço inferior */
 }
-
-
-
 
 .rodape .icons a {
     transition: transform .18s ease;
+    /* Transição suave ao passar o mouse */
 }
-
-
-
-
 
 .rodape .icons a:hover {
     transform: scale(1.12);
+    /* Efeito de zoom ao passar o mouse */
 }
-
-
-
-
-
-
 
 .rodape i {
     font-size: 2em;
+    /* Ícones grandes */
     margin: .5em;
+    /* Espaçamento ao redor */
     color: #A68B71;
-
-
+    /* Cor marrom suave */
 }

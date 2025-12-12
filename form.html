@@ -1,103 +1,105 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="descrição da minha pagina" />
-    <meta name="author" content="Alex Rodrigues Vitorino" />
+    <meta charset="UTF-8" /> <!-- Define a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Ajuste para mobile -->
+    <meta name="description" content="descrição da minha pagina" /> <!-- Descrição da página para SEO -->
+    <meta name="author" content="Alex Rodrigues Vitorino" /> <!-- Autor da página -->
 
-    <!-- FONT -->
+    <!-- FONTE -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+    <!-- Importa fonte externa -->
 
-    <!-- BOOTSTRAP AND ICON -->
+    <!-- BOOTSTRAP E ÍCONES -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- CSS do Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <!-- Ícones do Bootstrap -->
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="form.css">
+    <!-- CSS DO PROJETO -->
+    <link rel="stylesheet" href="./css/footer.css"> <!-- Estilo do rodapé -->
+    <link rel="stylesheet" href="form.css"> <!-- Estilo do formulário -->
 
-
-    <title>Projeto panettone</title>
+    <title>Projeto panettone</title> <!-- Título da aba -->
 </head>
 
 <body>
 
-    <!-- IMAGEM PRINCIPAL -->
+    <!-- IMAGEM PRINCIPAL DO CABEÇALHO -->
     <header>
-        <img src="https://mid-noticias.curitiba.pr.gov.br/2017/capa/00215067.jpg" alt="" class="img-fluid">
-
+        <img src="https://mid-noticias.curitiba.pr.gov.br/2017/capa/00215067.jpg" alt="Imagem de panettone"
+            class="img-fluid"> <!-- Imagem grande com ajuste responsivo -->
     </header>
 
-    <!-- FORMULÁRIO -->
-    <form class="d-flex flex-column" id="form-pedido">
-        <h2 class="text-center contact">Pedido</h2>
+    <!-- FORMULÁRIO DE PEDIDO -->
+    <form class="d-flex flex-column" id="form-pedido"> <!-- Formulário alinhado em coluna -->
+        <h2 class="text-center contact">Pedido</h2> <!-- Título -->
 
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+        <label for="nome">Nome</label> <!-- Rótulo -->
+        <input type="text" id="nome" name="nome" required placeholder="Digite seu nome"> <!-- Campo de nome -->
 
         <label for="panettone">Selecione o Panettone</label>
-        <select name="panettone" id="panettone" required>
+        <select name="panettone" id="panettone" required> <!-- Lista de opções de panettone -->
             <option value="">Escolha uma Opção</option>
             <option value="frutas cristalizadas">Frutas cristalizadas</option>
             <option value="chocotone">Chocotone</option>
-            <option value="panettone de frutas">Panettone de frutas</option>
             <option value="redtone gotas de chocolate">Redtone gotas de chocolate</option>
             <option value="panettone de chocolate">Panettone de chocolate</option>
             <option value="panettone de calabresa">Panettone de calabresa</option>
         </select>
 
-        <!-- QUANTIDADE (somente input) -->
+        <!-- CAMPO DE QUANTIDADE -->
         <label for="quantidade">Quantidade</label>
         <input type="number" id="quantidade" min="1" placeholder="Digite a quantidade" required>
 
-        <!-- SELECT DE TAMANHO -->
+        <!-- SELETOR DE TAMANHO -->
         <label for="tamanho">Tamanho</label>
         <select id="tamanho" required>
             <option value="">Escolha o tamanho</option>
             <option value="500g">500g</option>
         </select>
 
-        <!-- BOTÃO -->
+        <!-- BOTÃO DE ENVIO -->
         <button type="submit" class="button">Enviar</button>
     </form>
 
-
-
-    <!-- FOOTER -->
+    <!-- RODAPÉ -->
     <footer class="rodape">
 
-        <!-- ICONE -->
+        <!-- ÍCONE DO INSTAGRAM -->
         <div class="icons">
             <a href="https://www.instagram.com/paoartesanaldadri?igsh=MTdhOHlhOHhwZ2dmMA==">
-                <i class="bi bi-instagram"></i>
+                <i class="bi bi-instagram"></i> <!-- Ícone do Instagram -->
             </a>
         </div>
 
         <p class="mensagem"> 🎄 Que seu Natal seja tão doce quanto um panettone artesanal! 🎁</p>
+        <!-- Mensagem temática -->
 
         <p class="copy">© 2025 Todos os direitos reservados. Desenvolvido por Alex Rodrigues.</p>
+        <!-- Direitos autorais -->
 
     </footer>
 
 
-    <!-- Bootstrap -->
+    <!-- SCRIPT DO BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-
+    <!-- SCRIPT DO FORMULÁRIO (ENVIO PARA WHATSAPP) -->
     <script>
         document.getElementById("form-pedido").addEventListener("submit", function (event) {
-            event.preventDefault(); // Impede o envio normal do formulário
+            event.preventDefault(); // Impede o envio padrão do formulário
 
-            const nome = document.getElementById("nome").value;
-            const panettone = document.getElementById("panettone").value;
-            const quantidade = document.getElementById("quantidade").value;
-            
+            const nome = document.getElementById("nome").value; // Pega o nome
+            const panettone = document.getElementById("panettone").value; // Pega o tipo de panettone
+            const quantidade = document.getElementById("quantidade").value; // Pega a quantidade
+            const tamanho = document.getElementById("tamanho").value; // Pega o tamanho escolhido
 
-            const numero = "5521989199633"; // ← coloque aqui o número que vai receber
+            const numero = "5521989199633"; // Número que vai receber a mensagem
 
-            // Monta a mensagem
+            // Montando a mensagem enviada ao WhatsApp
             const mensagem =
                 `🍞 *Novo Pedido:*
              Nome: ${nome}
@@ -105,14 +107,12 @@
              Quantidade: ${quantidade}
              Tamanho: ${tamanho}`;
 
-            // Codifica e abre o WhatsApp
+            // Codifica e abre o WhatsApp com a mensagem pronta
             const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
 
-            window.open(url, "_blank");
+            window.open(url, "_blank"); // Abre o WhatsApp em nova aba
         });
     </script>
-
-
 
 </body>
 

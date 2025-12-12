@@ -1,211 +1,252 @@
 /* RESET CSS */
 * {
     margin: 0;
+    /* Remove margens padrão */
     padding: 0;
+    /* Remove espaçamentos padrão */
     box-sizing: border-box;
+    /* Inclui padding e borda no cálculo do tamanho */
 }
-
 
 :root {
     --primary: #ffffff;
+    /* Cor primária */
     --body: #F8F5F2;
+    /* Cor de fundo do body */
     --paragrafo: #DCDCDC;
+    /* Cinza claro para textos */
     --card-body: #ffffff;
+    /* Fundo dos cards */
     --button: #C1121F;
-
+    /* Cor dos botões */
 }
 
-/* BODY AND HEADER AND PADDING */
-
-
-
+/* ESPAÇAMENTO GERAL */
 section {
     padding: 1em;
-
+    /* Espaçamento padrão nas sections */
 }
-
 
 html,
 body {
     background-color: var(--body);
+    /* Define o fundo geral */
     overflow-x: hidden;
+    /* Evita rolagem horizontal */
 }
 
-
-
-
+/* IMAGEM DO HEADER */
 header img {
     height: 600px;
+    /* Altura da imagem */
     filter: brightness(70%);
+    /* Escurece a imagem */
 }
-
-
-
 
 header {
     position: relative;
+    /* Permite posicionamento absoluto dos textos */
 }
 
-
-
-
-
+/* TÍTULO PRINCIPAL */
 .title {
     position: absolute;
+    /* Sobreposto à imagem */
     font-family: "Cinzel", serif;
+    /* Fonte decorativa */
     top: 6em;
+    /* Distância do topo */
     font-size: 2.5em;
+    /* Tamanho do título */
     margin-left: 1em;
+    /* Espaçamento lateral */
     color: var(--primary);
+    /* Cor do título */
     width: 80%;
+    /* Largura para centralizar */
     text-align: center;
+    /* Centralizado */
     font-weight: 500;
-
-
-
+    /* Peso do texto */
 }
 
-
-
-
+/* TEXTO SECUNDÁRIO */
 .texto {
     position: absolute;
+    /* Sobreposto à imagem */
     top: 30em;
+    /* Distância vertical */
     color: var(--paragrafo);
+    /* Cor do texto */
     margin-left: 7em;
+    /* Espaçamento lateral */
     margin-top: 1em;
+    /* Pequeno espaço adicional */
     font-size: .8em;
+    /* Tamanho reduzido */
     font-weight: 300;
-
+    /* Peso leve */
 }
 
-
-
-
+/* TEXTO DO LOGO */
 .texto-logo {
     position: absolute;
+    /* Posicionado no topo */
     top: 3em;
+    /* Distância do topo */
     color: #F8F9FA;
+    /* Cor clara */
     margin-left: 4em;
+    /* Espaçamento lateral */
     font-size: 1.3em;
+    /* Tamanho do texto */
     font-weight: 500;
+    /* Peso médio */
     text-shadow: 0 0 6px #F5F5F5;
+    /* Efeito de brilho */
 }
 
-
-
-
+/* IMAGENS DOS CARDS */
 .card-img {
     height: 300px;
+    /* Altura da imagem */
     object-fit: cover;
+    /* Corta mantendo proporção */
     width: 100%;
+    /* Largura total */
     border-radius: 0;
+    /* Sem bordas arredondadas */
 }
 
-
+/* CORPO DO CARD */
 .card-body {
     background-color: var(--card-body);
+    /* Fundo branco */
     min-height: 150px;
+    /* Altura mínima */
     display: flex;
+    /* Layout flex */
     flex-direction: column;
-
-
-
+    /* Alinhamento vertical */
 }
 
-
-
+/* TÍTULO DE SESSÃO */
 .second-title {
     color: #4B3621;
+    /* Marrom escuro */
     text-align: center;
+    /* Centralizado */
     font-size: 1.5em;
+    /* Tamanho médio/grande */
     font-weight: 600;
+    /* Semibold */
     font-family: "Cinzel", serif;
+    /* Fonte elegante */
 }
 
-
-
+/* NOME DO PRODUTO */
 .name {
     color: #5A3E2B;
+    /* Marrom médio */
     font-size: 1em;
+    /* Tamanho padrão */
     text-transform: capitalize;
+    /* Primeiras letras maiúsculas */
     font-weight: 700;
-
+    /* Negrito */
 }
 
-
+/* TIPO DO PRODUTO */
 .type {
     font-size: .9em;
+    /* Tamanho pequeno */
     color: #8B7D72;
+    /* Cinza amarronzado */
     font-weight: 500;
-
+    /* Peso médio */
 }
 
-
-
-
+/* PREÇOS */
 .price {
     display: flex;
+    /* Alinha os preços */
     justify-content: space-between;
+    /* Espaço entre eles */
     margin-top: auto;
-
+    /* Joga para o final do card */
 }
-
 
 .old-price {
     font-size: .9em;
+    /* Tamanho do texto */
     text-decoration: line-through;
+    /* Riscado */
     color: #A1866F;
+    /* Tom apagado */
 }
-
 
 .new-price {
     font-weight: bolder;
+    /* Bem forte */
     color: #000000;
+    /* Preto */
 }
 
-
-
-
-
+/* BOTÃO DE LINK */
 .link-button {
     display: block;
+    /* Exibido como bloco */
     width: max-content;
+    /* Ajusta ao conteúdo */
     margin: 0 auto;
+    /* Centraliza */
     margin-top: 2em;
+    /* Espaço superior */
     background-color: var(--button);
+    /* Cor vermelha */
     padding: 1.1em 2em;
+    /* Espaçamento interno */
     border-radius: 3px;
+    /* Bordas levemente arredondadas */
     color: #ffffff;
+    /* Texto branco */
     text-decoration: none;
+    /* Remove sublinhado */
     font-weight: 500;
+    /* Peso médio */
 }
 
-
-
-
+/* VÍDEOS */
 .video-container video {
     object-fit: contain;
+    /* Mantém proporção sem cortar */
     width: 100%;
+    /* Largura total */
 }
 
-
-
+/* CAIXA DE INFORMAÇÕES */
 .information {
     background-color: rgba(255, 0, 0, 0.1);
+    /* Vermelho claro translúcido */
     height: 350px;
+    /* Altura fixa */
     padding: 1.2em;
+    /* Espaçamento interno */
     border-radius: 3px;
-
+    /* Bordas suaves */
 }
-
-
 
 .information h3 {
     font-size: 1.2em;
+    /* Tamanho do texto */
     font-family: "Cinzel", serif;
+    /* Fonte decorativa */
     color: rgba(80, 80, 80, 0.8);
+    /* Cinza suave */
     letter-spacing: 1px;
+    /* Espaçamento entre letras */
     line-height: 28px;
+    /* Altura da linha */
     font-weight: 100;
+    /* Texto leve */
 }
