@@ -236,6 +236,9 @@ header {
     /* Bordas suaves */
 }
 
+
+
+
 .information h3 {
     font-size: 1.2em;
     /* Tamanho do texto */
@@ -249,4 +252,27 @@ header {
     /* Altura da linha */
     font-weight: 100;
     /* Texto leve */
+}
+
+
+
+.pagamento {
+    background-color: #e8f5e9;
+    height: 350px;
+    padding: 1.2em;
+    border-radius: 3px;
+}
+
+
+
+
+.pagamento h3 {
+    font-size: 1.4em;
+    font-family: "Cinzel", serif;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-weight: 100;
+      color: rgba(80, 80, 80, 0.8);
+
+
 }
