@@ -258,9 +258,13 @@ header {
 
 .pagamento {
     background-color: #e8f5e9;
+    /* Cor de background */
     height: 400px;
+    /* Altura da linha */
     padding: 1.2em;
+    /* Espaçamento interno */
     border-radius: 3px;
+    /* Bordas suaves */
 }
 
 
@@ -268,11 +272,17 @@ header {
 
 .pagamento h3 {
     font-size: 1.4em;
+    /* Tamanho do texto */
     font-family: "Cinzel", serif;
+    /* Fonte decorativa */
     letter-spacing: 1px;
+    /* Espaçamento entre letras */
     line-height: 28px;
+    /* Altura da linha */
     font-weight: 100;
+    /* Texto leve */
     color: #C1121F;
+    /* Cor vermelha */
 
 
 }
